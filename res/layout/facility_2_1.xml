@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_gravity="center">
+    <TextView android:text="騎兵隊是非洲部落版的旋轉木馬,非常適合小朋友的遊樂設施,再騎乘奔馳的瞬間,您可以想像化身沙漠商旅,橫渡於沙漠之間買賣,沙漠沿途的駝鈴聲,讓人神馳嚮往" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+   
+</TableLayout>

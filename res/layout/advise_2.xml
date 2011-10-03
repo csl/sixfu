@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_gravity="center">
+    <TextView android:text="(12~17歲以上建議嘗試)" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="17px"></TextView>
+    <TextView android:text="★刺激性遊樂設施" android:id="@+id/textView12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="15px"></TextView>
+    <TextView android:text=" " android:id="@+id/textView11" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="美國大西部：遊樂設施：" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="大峽谷急流泛舟、西部瘋狂列車、古墓謎城(動感電影)、★笑傲飛鷹、★老油井、醉酒桶(110cm上)等六項。 
+" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text=" " android:id="@+id/textView13" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="阿拉伯皇宮：遊樂設施：" android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="魔宮救美(3D動感電影)、★風火輪、蘇丹王大冒險等三項。
+" android:id="@+id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text=" " android:id="@+id/textView14" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="南太平洋：　遊樂設施：" android:id="@+id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="★大海盜、★火山歷險、★大怒神、大海嘯等四項。" android:id="@+id/textView7" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text=" " android:id="@+id/textView15" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="非洲部落：　遊樂設施：" android:id="@+id/textView8" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="沙漠風暴、猛獸區遊園巴士、草食區動物、蒸氣火車等四項。 
+" android:id="@+id/textView9" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    </TableLayout>

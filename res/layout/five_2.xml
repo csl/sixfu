@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_gravity="center">
+    
+    <TextView android:text="三明治套餐" android:id="@+id/textView14" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="明太子起士三明治
+黑胡椒牛肉三明治
+" android:id="@+id/textView13" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="鬆餅甜點" android:id="@+id/textView12" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="草莓紅茶鬆餅 $130
+香蕉巧克力鬆餅 $130
+抹茶紅豆鬆餅 $130
+仙草烤布丁 $40
+" android:id="@+id/textView11" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="濃湯" android:id="@+id/textView10" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="玉米起酥濃湯 $65
+蔬菜起司濃湯 $65
+" android:id="@+id/textView9" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="茶品" android:id="@+id/textView8" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="黃金綠茶 $35
+新門紅茶 $45
+關西珍珠奶凍奶茶 $45
+關西仙草凍奶茶 $45
+桂圓薑母茶 $55
+野柑橘香茶 $55
+英式水果茶 $65
+錫蘭香茶 $65
+氣泡水 $90
+礦泉水 $70
+" android:id="@+id/textView7" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="咖啡" android:id="@+id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="美式咖啡 $55
+卡布奇諾 $75
+拿鐵咖啡 $75
+日式抹茶拿鐵 $75
+英式伯爵茶拿鐵 $75
+關西紅茶拿鐵 $75
+焦糖榛果拿鐵 $85
+熱可可 $60
+榛果鮮奶 $65
+鮮奶 $55
+" android:id="@+id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="冰沙" android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="紅豆冰沙 $65
+日芋冰沙 $70
+奇異果冰沙 $70
+鮮芒果冰沙 $75
+蘇門答臘咖啡冰沙 $75
+歐力歐巧克力冰沙 $75
+草莓歐蕾 $75
+" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="冰淇淋" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="哈比蛋糕冰淇淋 $125
+大溪地香草冰淇淋 $125
+京都抹茶冰淇淋 $125
+水果彩繪冰淇淋 $145
+藍姆葡萄冰淇淋 $135
+瑞典巧克力冰淇淋 $135
+" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+<TextView android:id="@+id/textView15" android:text="漏斗蛋糕 $65
+漏斗蛋糕套餐 $100
+" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+    
+   
+</TableLayout>

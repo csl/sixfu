@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:id="@+id/AbsoluteLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_width="120dip" android:id="@+id/button1" android:text="點選看菜單" android:layout_height="40dip" android:layout_y="420dip" android:layout_x="100dip"></Button>
+    <TextView android:text="冰淇淋店" android:id="@+id/textView1" android:layout_height="50dip" android:layout_width="100dip" android:layout_y="0dip" android:layout_x="0dip" android:textSize="20dip"></TextView>
+    <ImageView android:layout_width="wrap_content" android:src="@drawable/fi2" android:layout_height="wrap_content" android:id="@+id/imageView1" android:layout_x="60dip" android:layout_y="80dip"></ImageView>
+    <TextView android:text="沒想到吧!我們這裡友也有專業的咖啡~試試我們的Espresso,還是Latte...,杯杯都是滿心的濃純香!" android:layout_height="50dip" android:id="@+id/textView2" android:layout_y="300dip" android:layout_width="280dip" android:layout_x="20dip"></TextView>
+    
+</AbsoluteLayout>

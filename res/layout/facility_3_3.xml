@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_gravity="center">
+    <TextView android:text="您羨慕天方夜譚故事中阿拉丁乘著飛毯四處翱翔的情境嗎?現在的你也可以和他一樣享受高空飛翔的快感,馬上就來搭乘華麗照型的皇家波斯地毯,化身為阿拉丁盡情遨遊阿拉伯世界吧!" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+   
+</TableLayout>

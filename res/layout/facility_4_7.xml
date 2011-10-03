@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_gravity="center">
+    <TextView android:text="若您不敢乘坐火山歷險,但想探訪史前恐龍,您可徒步參觀侏儸紀失樂園,在這裡可以看到暴龍,腫頭龍,三角龍,翼手龍,雷龍,劍龍等,還可目睹迅猛龍攻擊盾頭龍,以及腕龍戲水的景象,失樂園山頂的樹屋是俯瞰六福村的最佳地點,樹屋下亦是玩累時休憩片刻的最佳場所" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+   
+</TableLayout>

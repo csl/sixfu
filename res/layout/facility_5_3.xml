@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_gravity="center">
+    <TextView android:text="本設施由瑞士引進,為全世界第二座,亞洲第一座U型滑軌懸吊式螺旋雲霄飛車,每次可乘坐28人,軌道全長190公尺,最大落差達56公尺,瞬間最高時速122公里,在1分30秒的歷程中您將兩腳懸空,以360度螺旋翻滾衝天,90度垂直俯衝急速下降,驚嚇的程度絕對讓你頭皮發麻,冷汗直流,想體驗兀鷹狂飆飛翔的快感?歡迎超級玩家來挑戰!" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+   
+</TableLayout>

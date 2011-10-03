@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_gravity="center">
+    <TextView android:text="本設施為全國唯一的自轉式雲霄飛車,將帶著您一方面像雲霄飛車高速行駛,一方面座椅又360度自行旋轉,可比擬龍捲風強力漩渦的衝擊力,絕對讓您驚聲尖叫,讚嘆不已" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+   
+</TableLayout>

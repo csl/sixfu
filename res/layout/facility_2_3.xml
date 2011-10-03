@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_gravity="center">
+    <TextView android:text="本園提供免費的遊園巴士,您可搭乘遊園巴士至猛獸區近距離的觀賞孟加拉虎,美洲黑熊,非洲獅子,阿拉斯加棕熊,阿拉伯狒狒等猛獸,在沒有護欄的非洲部落原始草原上您就像來到真正的非洲" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+   
+</TableLayout>

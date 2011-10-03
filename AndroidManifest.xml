@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.android"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/sixfu_1" android:name="ton">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:label="@string/sixfu_2" android:name="todaynews"></activity>
+        <activity android:label="@string/sixfu_4" android:name="facility"></activity>
+        <activity android:label="@string/sixfu_5" android:name="location"></activity>
+        <activity android:label="@string/sixfu_6" android:name="advise"></activity>
+        <activity android:label="@string/sixfu_7" android:name="order"></activity>
+        <activity android:label="@string/sixfu_8" android:name="emergency"></activity>
+        <activity android:label="@string/sixfu_9" android:name="todaynews_maintain"></activity>
+        <activity android:label="@string/sixfu_11" android:name="todaynews_other"></activity>
+        <activity android:label="@string/sixfu_10" android:name="todaynews_preference"></activity>
+        <activity android:label="@string/sixfu_12" android:name="location_1"></activity>
+        <activity android:label="@string/sixfu_13" android:name="location_2"></activity>
+        <activity android:label="@string/sixfu_14" android:name="location_3"></activity>
+        <activity android:label="@string/sixfu_15" android:name="location_4"></activity>
+        <activity android:label="@string/sixfu_16" android:name="location_5"></activity>
+        <activity android:label="@string/sixfu_17" android:name="one_1"></activity>
+        <activity android:label="@string/sixfu_18" android:name="three_1"></activity>
+        <activity android:label="@string/sixfu_19" android:name="four_1"></activity>
+        <activity android:label="@string/sixfu_20" android:name="four_2"></activity>
+        <activity android:label="@string/sixfu_21" android:name="five_1"></activity>
+        <activity android:label="@string/sixfu_22" android:name="five_2"></activity>
+        <activity android:label="@string/sixfu_23" android:name="five_3"></activity>
+        <activity android:label="@string/sixfu_24" android:name="five_4"></activity>
+        <activity android:label="@string/sixfu_25" android:name="facility_1"></activity>
+        <activity android:label="@string/sixfu_26" android:name="facility_2"></activity>
+        <activity android:label="@string/sixfu_27" android:name="facility_3"></activity>
+        <activity android:label="@string/sixfu_28" android:name="facility_4"></activity>
+        <activity android:label="@string/sixfu_29" android:name="facility_5"></activity>        
+        <activity android:label="@string/sixfu_30" android:name="facility_2_1"></activity>
+        <activity android:label="@string/sixfu_31" android:name="facility_2_2"></activity>
+        <activity android:label="@string/sixfu_32" android:name="facility_2_3"></activity>
+        <activity android:label="@string/sixfu_33" android:name="facility_2_4"></activity>
+        <activity android:label="@string/sixfu_34" android:name="facility_2_5"></activity>
+        <activity android:label="@string/sixfu_35" android:name="facility_2_6"></activity>
+        <activity android:label="@string/sixfu_36" android:name="facility_2_7"></activity>
+        <activity android:label="@string/sixfu_37" android:name="facility_2_8"></activity>
+        <activity android:label="@string/sixfu_38" android:name="facility_2_9"></activity>
+        <activity android:label="@string/sixfu_39" android:name="facility_2_10"></activity>
+        <activity android:label="@string/sixfu_40" android:name="facility_2_11"></activity>
+        <activity android:label="@string/sixfu_41" android:name="facility_3_1"></activity>
+        <activity android:label="@string/sixfu_42" android:name="facility_3_2"></activity>
+        <activity android:label="@string/sixfu_43" android:name="facility_3_3"></activity>
+        <activity android:label="@string/sixfu_44" android:name="facility_3_4"></activity>
+        <activity android:label="@string/sixfu_45" android:name="facility_3_5"></activity>
+        <activity android:label="@string/sixfu_46" android:name="facility_3_6"></activity>
+        <activity android:label="@string/sixfu_47" android:name="facility_4_1"></activity>
+        <activity android:label="@string/sixfu_48" android:name="facility_4_2"></activity>
+        <activity android:label="@string/sixfu_49" android:name="facility_4_3"></activity>
+        <activity android:label="@string/sixfu_50" android:name="facility_4_4"></activity>
+        <activity android:label="@string/sixfu_51" android:name="facility_4_5"></activity>
+        <activity android:label="@string/sixfu_52" android:name="facility_4_6"></activity>
+        <activity android:label="@string/sixfu_53" android:name="facility_4_7"></activity>
+        <activity android:label="@string/sixfu_54" android:name="facility_4_8"></activity>
+        <activity android:label="@string/sixfu_55" android:name="facility_5_1"></activity>
+        <activity android:label="@string/sixfu_56" android:name="facility_5_2"></activity>
+        <activity android:label="@string/sixfu_57" android:name="facility_5_3"></activity>
+        <activity android:label="@string/sixfu_58" android:name="facility_5_4"></activity>
+        <activity android:label="@string/sixfu_59" android:name="facility_5_5"></activity>
+        <activity android:label="@string/sixfu_60" android:name="facility_5_6"></activity>
+        <activity android:label="@string/sixfu_61" android:name="facility_5_7"></activity>
+        <activity android:label="@string/sixfu_62" android:name="facility_5_8"></activity>
+        <activity android:label="@string/sixfu_63" android:name="facility_5_9"></activity>
+        <activity android:label="@string/sixfu_64" android:name="facility_5_10"></activity>
+        <activity android:label="@string/sixfu_65" android:name="advise_1"></activity>
+        <activity android:label="@string/sixfu_66" android:name="advise_2"></activity>
+        <activity android:label="@string/sixfu_67" android:name="advise_3"></activity>
+        <activity android:label="@string/sixfu_68" android:name="advise_4"></activity>
+        <activity android:label="@string/sixfu_69" android:name="advise_5"></activity>
+        <activity android:label="@string/sixfu_70" android:name="sixfoo"></activity>
+        <activity android:label="@string/sixfu_71" android:name="location_first"></activity>
+        <activity android:label="@string/sixfu_72" android:name="global"></activity>
+        <activity android:label="@string/sixfu_73" android:name="o_1"></activity>
+        <activity android:label="@string/sixfu_74" android:name="t_1"></activity>
+        <activity android:label="@string/sixfu_75" android:name="fo_1"></activity>
+        <activity android:label="@string/sixfu_76" android:name="fo_2"></activity>
+        <activity android:label="@string/sixfu_77" android:name="fi_1"></activity>
+        <activity android:label="@string/sixfu_78" android:name="fi_2"></activity>
+        <activity android:label="@string/sixfu_79" android:name="fi_3"></activity>
+        <activity android:label="@string/sixfu_80" android:name="fi_4"></activity>
+        
+    </application>
+
+    <uses-sdk android:minSdkVersion="8" />
+  <uses-permission
+     android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission
+     android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission
+   android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission
+     android:name="android.permission.INTERNET"/>
+  <uses-permission
+     android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission
+   android:name="android.permission.WRITE_SETTINGS" />
+  <uses-permission
+     android:name="android.permission.WRITE_SECURE_SETTINGS" />
+  <uses-permission 
+     android:name="android.permission.READ_PHONE_STATE" />     
+</manifest>

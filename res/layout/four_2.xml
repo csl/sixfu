@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_gravity="center">
+    <TextView android:text="巴東椰香海鮮河粉$150套餐200" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="南洋蝦醬魷魚捲$179套餐249" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="滑蛋香煎鱈魚排$150套餐220" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="海鮮焗烤貝殼麵$179套餐249" android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="巧達北海兒童套餐$269" android:id="@+id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="小菜" android:id="@+id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="熱帶海洋海鮮總匯" android:id="@+id/textView7" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="泡菜" android:id="@+id/textView8" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    
+</TableLayout>

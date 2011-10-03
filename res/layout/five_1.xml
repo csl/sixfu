@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_gravity="center">
+    <TextView android:text="1六福藍帶起司豬排堡套餐 $149" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="2六福滿意牛肉堡套餐 $149" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="3六福勁辣雞腿堡套餐 $149" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="4六福酥炸雪魚堡套餐 $149" android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="5六塊雞套餐 $129" android:id="@+id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="6雙重起司蔬菜堡套餐 $129" android:id="@+id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="7米漢堡套餐 $139" android:id="@+id/textView7" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="8兒童套餐 $209" android:id="@+id/textView8" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="漢堡店凡點購任一套餐加價39元即可享有點心一份
+薯條一份
+六福小雞塊
+" android:id="@+id/textView9" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+     
+   
+</TableLayout>

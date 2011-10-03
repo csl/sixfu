@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_gravity="center">
+    <TextView android:text="耗資三億台幣的英式復古蒸汽火車可是您輕鬆暢遊非洲部落草食區的好幫手,軌道全長約一千公尺,每列火車約可搭載133人,繞行一圈約15分鐘,您可以免費搭乘全台首屈一指英式復古蒸汽火車瀏覽非洲部落獨特開放式風貌" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+   
+</TableLayout>

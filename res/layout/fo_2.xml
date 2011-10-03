@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:id="@+id/AbsoluteLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="海鮮屋" android:id="@+id/textView1" android:textSize="20dip" android:layout_x="0dip" android:layout_y="0dip" android:layout_width="match_parent" android:layout_height="match_parent"></TextView>
+    <Button android:layout_width="120dip" android:id="@+id/button1" android:text="點選看菜單" android:layout_height="40dip" android:layout_x="100dip" android:layout_y="420dip"></Button>
+    <ImageView android:layout_width="wrap_content" android:src="@drawable/fo2" android:layout_height="wrap_content" android:id="@+id/imageView1" android:layout_x="60dip" android:layout_y="100dip"></ImageView>
+    <TextView android:layout_width="280dip" android:text="走進海鮮屋,立刻就可以感受到海洋的滋潤,五彩繽紛的熱帶魚將帶您進入海洋世界,一同品嘗各式快炒、焗烤的南洋美食吧!" android:layout_height="280dip" android:id="@+id/textView2" android:layout_x="20dip" android:layout_y="320dip"></TextView>
+    
+</AbsoluteLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:id="@+id/AbsoluteLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/textView1" android:layout_width="100dip" android:layout_height="20dip" android:text="今日優惠"></TextView>
+    <Button android:text="返回" android:layout_width="70dip" android:id="@+id/button1" android:layout_height="40dip" android:layout_x="5dip" android:layout_y="444dip"></Button>
+    <ImageView android:src="@drawable/tft2" android:layout_width="wrap_content" android:id="@+id/imageView1" android:layout_height="wrap_content" android:layout_x="0dip" android:layout_y="100dip"></ImageView>
+</AbsoluteLayout>

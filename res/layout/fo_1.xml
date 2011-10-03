@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:id="@+id/AbsoluteLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_width="120dip" android:id="@+id/button1" android:text="點選看菜單" android:layout_height="40dip" android:layout_x="100dip" android:layout_y="420dip"></Button>
+    <TextView android:id="@+id/textView1" android:layout_x="0dip" android:layout_y="0dip" android:layout_width="match_parent" android:layout_height="match_parent" android:text="火山用餐區"></TextView>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageView1" android:src="@drawable/fo1" android:layout_x="60dip" android:layout_y="100dip"></ImageView>
+    <TextView android:text="能在火山歷險旁用餐區用餐,一邊觀看刺激的火山歷險,看獨木舟進入億萬年前的侏儸紀失樂園內探訪始前恐龍足跡,和從火山口三層樓高的急流處瞬間俯衝而下的尖叫聲,以及獨木舟衝下濺起的水花。" android:id="@+id/textView2" android:layout_x="20dip" android:layout_y="280dip" android:layout_width="280dip" android:layout_height="100dip"></TextView>
+    
+</AbsoluteLayout>

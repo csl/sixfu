@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:id="@+id/AbsoluteLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:src="@drawable/o1" android:layout_height="wrap_content" android:id="@+id/imageView1" android:layout_x="60dip" android:layout_y="100dip"></ImageView>
+    <Button android:layout_width="120dip" android:id="@+id/button1" android:text="點選看菜單" android:layout_height="40dip" android:layout_x="100dip" android:layout_y="420dip"></Button>
+    <TextView android:text="金鳳樓" android:id="@+id/textView1" android:layout_x="0dip" android:layout_y="0dip" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="20dip"></TextView>
+    <TextView android:text="古色古香的宮廷中式餐廳,提供中華美食料理及道地客家美肴,讓遠道而來的朋友們更加了解客式本家美味
+" android:id="@+id/textView2" android:layout_x="20dip" android:layout_y="300dip" android:layout_width="280dip" android:layout_height="100dip"></TextView>
+    
+</AbsoluteLayout>

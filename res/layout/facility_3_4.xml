@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_gravity="center">
+    <TextView android:text="這是在阿拉伯皇宮中特別為小朋友及全家人共享歡樂時光所精心打造的遊樂設施,在美輪美奐的皇宮中,您可以幻想自己是小王子或是小公主,乘著飛天白馬輕鬆遨遊在皇宮中,觀賞,巡視皇宮各角落的景觀,仔細找找,您還會發現有大象,長頸鹿,孔雀各類可愛的動物喔!" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+   
+</TableLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:id="@+id/AbsoluteLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageView1" android:src="@drawable/fi4" android:layout_x="60dip" android:layout_y="100dip"></ImageView>
+    <TextView android:text="牛排館" android:id="@+id/textView1" android:layout_x="0dip" android:layout_y="0dip" android:layout_height="match_parent" android:layout_width="match_parent" android:textSize="20dip"></TextView>
+    <Button android:layout_width="120dip" android:id="@+id/button1" android:text="點選看菜單" android:layout_height="40dip" android:layout_x="100dip" android:layout_y="420dip"></Button>
+    <TextView android:text="美國好萊塢的西部拓荒影片曾經風迷全球,至今仍有無窮的魅力!浪漫傳奇的英雄刺激的槍戰、騎馬揚長奔馳的豪情都是美國西部早期的特色在這裡我們提供您傳統炭烤牛排、燒羊肉、麵點..." android:id="@+id/textView2" android:layout_x="20dip" android:layout_width="280dip" android:layout_y="300dip" android:layout_height="100dip"></TextView>
+    
+</AbsoluteLayout>

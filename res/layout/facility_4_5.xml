@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_gravity="center">
+    <TextView android:text="象徵庫克船長冒險犯難精神的大海盜,是世界上同尺寸四大艘海盜船之一,更是國內最大的海盜船,故名為大海盜,船身全長18.5公尺,寬2.5公尺,每趟可乘坐84人,不僅外型獨特精緻,擺盪時離地約有七層樓高,前後盪幅更達70度,大海盜在搖動擺盪時,您可體驗庫克船長當年乘風破浪,冒險犯男的感受,一顆心隨著船起伏,驚險又刺激,可說是一種挑戰極限的設施,即使在一旁觀望,看著他左右擺盪,越來越高的幅度,就夠讓人瞠目結舌了!" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+   
+</TableLayout>

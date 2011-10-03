@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:id="@+id/AbsoluteLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_width="120dip" android:id="@+id/button1" android:text="點選看菜單" android:layout_height="40dip" android:layout_x="100dip" android:layout_y="420dip"></Button>
+    <ImageView android:layout_width="wrap_content" android:src="@drawable/fi1" android:layout_height="wrap_content" android:id="@+id/imageView1" android:layout_x="60dip" android:layout_y="100dip"></ImageView>
+    <TextView android:layout_width="280dip" android:text="特有溫馨、明亮的純美式格局設計及色調搭配提供各式口味的漢堡可樂...,邀您同來大嚼" android:layout_height="50dip" android:id="@+id/textView1" android:layout_x="20dip" android:layout_y="300dip"></TextView>
+    <TextView android:layout_width="100dip" android:text="漢堡店" android:textSize="20dip" android:layout_height="50dip" android:id="@+id/textView2" android:layout_x="0dip" android:layout_y="0dip"></TextView>
+    
+</AbsoluteLayout>

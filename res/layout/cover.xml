@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:id="@+id/AbsoluteLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android"> 
+	<ImageView android:src="@drawable/cover" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imageView1" android:layout_x="0dip" android:layout_y="0dip"></ImageView>
+    <TextView android:layout_height="20dip" android:text="歡迎使用六福村行動導覽系統!!" android:layout_width="200dip" android:id="@+id/textView1" android:layout_x="24dip" android:layout_y="81dip"></TextView>
+    <Button android:layout_height="60dip" android:text="登入系統" android:id="@+id/button1" android:layout_width="200dip" android:layout_y="360dip" android:layout_x="60dip"></Button>   
+            
+</AbsoluteLayout>

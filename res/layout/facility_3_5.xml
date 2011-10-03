@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_gravity="center">
+    <TextView android:text="本設施為六福村重金禮聘比利時數位影像科技專家所自行製作的動感電影,並以70釐米高畫質,10.5公尺寬5.5公尺高的超大螢幕3D立體呈現,讓您體驗身歷其境的冒險感受,每場可容納100人次,是全世界只有到六福村才能參與的冒險之旅喔!" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+   
+</TableLayout>

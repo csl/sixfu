@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_gravity="center">
+    <TextView android:text="您將搭乘色彩亮麗的獨木舟像火山口緩緩上升,進入億萬年前的侏儸紀失樂園內探訪始前恐龍足跡,真正緊張的時刻是從火山口三層樓高的急流處瞬間俯衝而下,剎那間驚險的讓您來不及尖叫,刺激的感覺就在那一瞬間,最適合心臟強,膽子夠大,並且愛刺激的朋友前來冒險,如果您覺得衝一次不過癮,告訴您這是目前全世界唯一每趟可衝兩次的歷險設施喔!" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+   
+</TableLayout>

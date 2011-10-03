@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_gravity="center">
+    <TextView android:text="這是美國大西部內最大型的遊樂設施,一是目前國內最大型的人工泛舟河道,水道全長740公尺,每艘圓形橡膠船可乘坐6至9人,全程約7分鐘,沿途風光模仿美國科羅拉多河上的大峽谷景觀為藍圖建造,途中有激流,奇岩怪石,每個轉彎處都可能是冒險旅程的開端,充滿著驚喜與趣味,還有隨時會被水泡攻擊的驚險時刻" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+   
+</TableLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_gravity="center">
+    <TextView android:text="利用篷車的懷舊造型,這可說是美國大西部的小小摩天輪,雖然不高但玩過的遊客不管是小朋友,銀髮族還是熱戀的情侶都讚不絕口,在摩天篷車上它帶給您無限的歡樂,也讓您心中裝滿歡樂的記憶" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+   
+</TableLayout>

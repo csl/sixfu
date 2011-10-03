@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_gravity="center">
+    <TextView android:text="阿拉伯皇宮失落千年的寶藏一直是個謎樣的傳說!在蘇丹王的詛咒中尋寶人未曾生還過,唯一的線索是法老王祭壇後的禿鷹通道...載著尋寶人的吉普車前仆後繼的在沙漠的夜中一路衝鋒陷陣...既要飛越凶猛的鱷魚潭,巨蛇穴;閃避凌空飛掠的死亡巨斧;還要在恐怖木乃伊追殺下,浴血突圍沙漠戰場;分秒必爭的即時通過斷橋,圍牆,並與前方虎視眈眈的噴火龍來一場生死鬥...先別急著喘氣,這不是結束,而是另一個冒險的開始,因為謎樣的寶藏就在前方閃閃發光...斥資12億元,歷時4分鐘的中東歷險,就等著有勇氣的您上車挑戰!" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+   
+</TableLayout>
