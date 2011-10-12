@@ -89,6 +89,8 @@
         <activity android:label="@string/sixfu_78" android:name="fi_2"></activity>
         <activity android:label="@string/sixfu_79" android:name="fi_3"></activity>
         <activity android:label="@string/sixfu_80" android:name="fi_4"></activity>
+        <activity android:label="@string/sixfu_80" android:name="fi_4"></activity>
+        <activity android:label="@string/sixfu_80" android:name="MyGoogleMap"></activity>
         
     </application>
 

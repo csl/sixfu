@@ -90,6 +90,8 @@ public class ton extends Activity {
 			public void onClick(View v){
 				
 				//login
+				startActivity(new Intent(ton.this, sixfoo.class));
+				ton.this.finish();
 				
 				Log.i(TAG, "login register: " + loginurl + "login.php?phone=" + tel);
 				int rep = logintoweb(loginurl + "login.php?phone=" + tel); 

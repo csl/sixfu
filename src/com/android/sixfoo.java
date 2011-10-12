@@ -12,11 +12,13 @@ import android.widget.Button;
 
 
 
-public class sixfoo extends Activity {
+public class sixfoo extends Activity 
+{
     /** Called when the activity is first created. */
 	//private static final int SHOW_EDITOR = 0;
 	@Override
-	public void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState) 
+	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		//設定Button01按鈕的操作
