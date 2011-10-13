@@ -1,4 +1,4 @@
-package com.gpsspeed;
+package com.android;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -47,8 +47,6 @@ public class MyOverLay  extends Overlay {
     private boolean ReadyShowRange;
 
     private boolean ShowTracker;    
-    
-    public MapLocation mSelectedMapLocation;  
     
     private ArrayList<GeoPoint> tracker; 
 
@@ -149,47 +147,6 @@ public class MyOverLay  extends Overlay {
     ReadyShowRange = false;
     gp.clear();
   }
-
-  /**
-     * Test whether an information balloon should be displayed or a prior balloon hidden.
-     */
-  private MapLocation getHitMapLocation(MapView	mapView, GeoPoint	tapPoint) {
-    	
-    	/**
-    	 *   Tracking the clicks on MapLocation
-    	 */
-    	MapLocation hitMapLocation = null;
-		
-    	RectF hitTestRecr = new RectF();
-		  Point screenCoords = new Point();
-    	Iterator<MapLocation> iterator = mLocationViewers.getMapLocations(false).iterator();
-    	while(iterator.hasNext()) {
-    		MapLocation testLocation = iterator.next();
-    		
-    		/**
-    		 * This is used to translate the map's lat/long coordinates to screen's coordinates
-    		 */
-    		mapView.getProjection().toPixels(testLocation.getPoint(), screenCoords);
-
-	    	// Create a testing Rectangle with the size and coordinates of our icon
-	    	// Set the testing Rectangle with the size and coordinates of our on screen icon
-    		hitTestRecr.set(-mBubbleIcon.getWidth()/2,-mBubbleIcon.getHeight(),mBubbleIcon.getWidth()/2,0);
-    		hitTestRecr.offset(screenCoords.x,screenCoords.y);
-
-	    	//  At last test for a match between our Rectangle and the location clicked by the user
-    		mapView.getProjection().toPixels(tapPoint, screenCoords);
-    		
-    		if (hitTestRecr.contains(screenCoords.x,screenCoords.y)) {
-    			hitMapLocation = testLocation;
-    			break;
-    		}
-    	}
-    	
-    	//  Finally clear the new MouseSelection as its process finished
-    	tapPoint = null;
-    	
-    	return hitMapLocation; 
-    }
 
     //draw range
     private void drawPointRange(Canvas canvas, MapView mapView, boolean shadow) 
