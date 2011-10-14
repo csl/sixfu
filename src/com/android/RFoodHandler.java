@@ -4,9 +4,13 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
+import android.util.Log;
+
 public class RFoodHandler extends DefaultHandler
 {
 	//tag
+	private String TAG = "RFood";
+	
 	private final static int ID = 1;
 	private final static int NAME = 2;
 	private final static int TIME = 3;
@@ -26,12 +30,14 @@ public class RFoodHandler extends DefaultHandler
 
 	public RFoodXMLStruct getJListStruct() 
 	{
-		return jlcs.getoneJL();
+		return jlcs.getoneJL(0);
 	}
 
 	@Override
 	public void characters(char[] ch, int start, int length) throws SAXException {
+		
 		String s = new String(ch, start, length);
+		
 		switch (type) 
 		{
 		case ID:
@@ -50,8 +56,13 @@ public class RFoodHandler extends DefaultHandler
 			jls.h_phone = s;
 			type = 0;
 			break;
+		case ADDR:
+			jls.h_addr = s;
+			type = 0;
+			break;
 		case MENU:
 			jls.h_menu = s;
+			Log.i(TAG, jls.h_menu);
 			type = 0;
 			break;
 		}

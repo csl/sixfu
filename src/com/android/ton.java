@@ -32,6 +32,7 @@ public class ton extends Activity {
 	private String tel;
 	private String loginurl;
 	static public String TAG = "SIXFU";
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -81,11 +82,11 @@ public class ton extends Activity {
 
             alert.show();      
         }
-        
-        
-		loginurl  = (String) this.getResources().getText(R.string.url);
 
-		button01.setOnClickListener(new Button.OnClickListener(){
+        loginurl  = (String) this.getResources().getText(R.string.url);
+
+		button01.setOnClickListener(new Button.OnClickListener()
+		{
 			@Override
 			public void onClick(View v){
 				
@@ -93,7 +94,7 @@ public class ton extends Activity {
 				startActivity(new Intent(ton.this, sixfoo.class));
 				ton.this.finish();
 				
-				Log.i(TAG, "login register: " + loginurl + "login.php?phone=" + tel);
+				Log.i(TAG, "login regist: " + loginurl + "login.php?phone=" + tel);
 				int rep = logintoweb(loginurl + "login.php?phone=" + tel); 
 				if (rep == 0)
 				{

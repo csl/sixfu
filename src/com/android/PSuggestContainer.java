@@ -33,9 +33,9 @@ public class PSuggestContainer
 		return listitem;
 	}
 	
-	public PSuggestXMLStruct getoneJL()
+	public PSuggestXMLStruct getoneJL(int index)
 	{
-		return jlist_items.get(0);
+		return jlist_items.get(index);
 	}
 	
 	public PSuggestContainer() 

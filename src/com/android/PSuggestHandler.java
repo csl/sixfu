@@ -25,7 +25,7 @@ public class PSuggestHandler extends DefaultHandler
 
 	public PSuggestXMLStruct getJListStruct() 
 	{
-		return jlcs.getoneJL();
+		return jlcs.getoneJL(0);
 	}
 
 	@Override

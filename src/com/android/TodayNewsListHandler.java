@@ -24,7 +24,7 @@ public class TodayNewsListHandler extends DefaultHandler
 
 	public TodayNewsXMLStruct getJListStruct() 
 	{
-		return jlcs.getoneJL();
+		return jlcs.getoneJL(0);
 	}
 
 	@Override

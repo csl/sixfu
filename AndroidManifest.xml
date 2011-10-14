@@ -17,9 +17,7 @@
         <activity android:label="@string/sixfu_6" android:name="advise"></activity>
         <activity android:label="@string/sixfu_7" android:name="order"></activity>
         <activity android:label="@string/sixfu_8" android:name="emergency"></activity>
-        <activity android:label="@string/sixfu_9" android:name="todaynews_maintain"></activity>
-        <activity android:label="@string/sixfu_11" android:name="todaynews_other"></activity>
-        <activity android:label="@string/sixfu_10" android:name="todaynews_preference"></activity>
+        <activity android:label="@string/sixfu_10" android:name="todaynews_v"></activity>
         <activity android:label="@string/sixfu_12" android:name="location_1"></activity>
         <activity android:label="@string/sixfu_13" android:name="location_2"></activity>
         <activity android:label="@string/sixfu_14" android:name="location_3"></activity>
@@ -91,6 +89,8 @@
         <activity android:label="@string/sixfu_80" android:name="fi_4"></activity>
         <activity android:label="@string/sixfu_80" android:name="fi_4"></activity>
         <activity android:label="@string/sixfu_80" android:name="MyGoogleMap"></activity>
+        <activity android:label="@string/sixfu_80" android:name="viewc"></activity>
+        <activity android:label="@string/sixfu_80" android:name="rfviewc"></activity>
         
     </application>
 
@@ -110,5 +110,7 @@
   <uses-permission
      android:name="android.permission.WRITE_SECURE_SETTINGS" />
   <uses-permission 
-     android:name="android.permission.READ_PHONE_STATE" />     
+     android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission 
+  	 android:name="android.permission.CALL_PHONE"/>
 </manifest>

@@ -30,14 +30,25 @@ public class advise extends Activity {
 		for (int i = 0; i < list.length; i++) {
 			list[i] = (String)activities[i * 2];
 		}
+		
+		
 		//將5個選單名稱安置在listView
 		ArrayAdapter<CharSequence> adapter = new ArrayAdapter<CharSequence>(this, android.R.layout.simple_list_item_1, list);
 		ListView listView = (ListView)findViewById(R.id.ListView01);
-		listView.setAdapter(adapter);
+		listView.setAdapter(adapter);	
+		
+		
 		//按下選單名稱指向相關的應用程式Class
 		listView.setOnItemClickListener(new OnItemClickListener() {		
-			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {	
-				Intent intent = new Intent(advise.this, (Class<?>)activities[position * 2 + 1]);
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) 
+			{	
+				Intent intent = new Intent(advise.this, todaynews_v.class);
+
+				Bundle bundle = new Bundle(); 
+				bundle.putInt("classify", 4); 
+				bundle.putInt("position", position); 
+				intent.putExtras(bundle); 
+				
 				startActivity(intent);
 			}		
 		});	

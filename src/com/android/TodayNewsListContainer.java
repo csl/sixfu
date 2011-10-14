@@ -33,9 +33,9 @@ public class TodayNewsListContainer
 		return listitem;
 	}
 	
-	public TodayNewsXMLStruct getoneJL()
+	public TodayNewsXMLStruct getoneJL(int index)
 	{
-		return jlist_items.get(0);
+		return jlist_items.get(index);
 	}
 	
 	public TodayNewsListContainer() 

@@ -29,20 +29,39 @@ public class todaynews extends Activity {
 		});        
         button02.setOnClickListener(new Button.OnClickListener(){
 			@Override
-			public void onClick(View v){
-				startActivity(new Intent(todaynews.this, todaynews_maintain.class));
+			public void onClick(View v)
+			{
+				Intent intent = new Intent(todaynews.this, todaynews_v.class);
+
+				Bundle bundle = new Bundle(); 
+				bundle.putInt("classify", 1); 
+				intent.putExtras(bundle); 
+				
+				startActivity(intent);
 			}
 		});
         button03.setOnClickListener(new Button.OnClickListener(){
 			@Override
 			public void onClick(View v){
-				startActivity(new Intent(todaynews.this, todaynews_preference.class));
+				Intent intent = new Intent(todaynews.this, todaynews_v.class);
+
+				Bundle bundle = new Bundle(); 
+				bundle.putInt("classify", 2); 
+				intent.putExtras(bundle); 
+				
+				startActivity(intent);
 			}
 		});
         button04.setOnClickListener(new Button.OnClickListener(){
 			@Override
 			public void onClick(View v){
-				startActivity(new Intent(todaynews.this, todaynews_other.class));
+				Intent intent = new Intent(todaynews.this, todaynews_v.class);
+
+				Bundle bundle = new Bundle(); 
+				bundle.putInt("classify", 3); 
+				intent.putExtras(bundle); 
+				
+				startActivity(intent);
 			}
 		});
     }

@@ -33,9 +33,9 @@ public class RFoodContainer
 		return listitem;
 	}
 	
-	public RFoodXMLStruct getoneJL()
+	public RFoodXMLStruct getoneJL(int index)
 	{
-		return jlist_items.get(0);
+		return jlist_items.get(index);
 	}
 	
 	public RFoodContainer() 
