@@ -10,4 +10,16 @@
     <Button android:layout_width="150dip" android:text="線上點餐" android:id="@+id/button6" android:layout_height="45dip" android:layout_x="0dip" android:layout_y="357dip"></Button>
     <Button android:layout_width="150dip" android:text="緊急聯絡" android:id="@+id/button7" android:layout_height="45dip" android:layout_y="357dip" android:layout_x="168dip"></Button>
     <Button android:layout_width="150dip" android:id="@+id/button1" android:layout_height="45dip" android:text="今日消息" android:layout_x="0dip" android:layout_y="157dip"></Button>
+    
+	<TextView
+    android:id="@+id/mytv"
+    android:layout_width="150px"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:text="@string/hello"
+    android:singleLine="true"
+    android:focusable="true" 
+    android:focusableInTouchMode="true"
+    android:ellipsize="marquee"
+    android:marqueeRepeatLimit="marquee_forever"/>
 </AbsoluteLayout>

@@ -1,7 +1,4 @@
 package com.android;
-
-
-
 import java.io.IOException;
 
 import org.apache.http.HttpResponse;
@@ -23,9 +20,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-
-
-
 public class ton extends Activity {
     /** Called when the activity is first created. */
 	//private static final int SHOW_EDITOR = 0;
@@ -34,7 +28,8 @@ public class ton extends Activity {
 	static public String TAG = "SIXFU";
 	
 	@Override
-	public void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState) 
+	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.cover);
 		//設定Button01按鈕的操作
@@ -44,7 +39,7 @@ public class ton extends Activity {
         tel = tm.getLine1Number();
         
         if (tel == null)
-        {
+         {
         	tel = "";
         	//simcard not offer
             //顯示輸入IP的windows
@@ -94,7 +89,7 @@ public class ton extends Activity {
 				startActivity(new Intent(ton.this, sixfoo.class));
 				ton.this.finish();
 				
-				Log.i(TAG, "login regist: " + loginurl + "login.php?phone=" + tel);
+				Log.i(TAG,  loginurl + "login.php?phone=" + tel);
 				int rep = logintoweb(loginurl + "login.php?phone=" + tel); 
 				if (rep == 0)
 				{
