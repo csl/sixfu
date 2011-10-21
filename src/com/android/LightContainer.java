@@ -25,7 +25,7 @@ public class LightContainer
         	if (item == null) continue;
         	
 			//Log.i("VALUE", item.getWid());
-			light.add(item.h_content);
+			light.add(item.h_date +  " " + item.h_content);
 
 		}
 		return light;

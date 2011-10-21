@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AbsoluteLayout android:id="@+id/AbsoluteLayout01" 
+<LinearLayout android:id="@+id/AbsoluteLayout01" 
 	android:layout_width="wrap_content" 
-	android:layout_height="wrap_content" 
+	android:layout_height="wrap_content"
+	android:background="@drawable/firstlogo"
 	xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:src="@drawable/firstlogo" android:layout_width="wrap_content" android:id="@+id/imageView1" android:layout_height="wrap_content" android:layout_x="0dip" android:layout_y="0dip"></ImageView>
-    <Button android:text="地點查詢" android:id="@+id/button4" android:layout_height="45dip" android:layout_width="150dip" android:layout_x="0dip" android:layout_y="257dip"></Button>
-    <Button android:layout_width="150dip" android:id="@+id/button3" android:layout_height="45dip" android:layout_y="157dip" android:layout_x="168dip" android:text="全區導覽"></Button>
-    <Button android:layout_width="150dip" android:text="遊園建議" android:id="@+id/button5" android:layout_height="45dip" android:layout_y="257dip" android:layout_x="168dip"></Button>
-    <Button android:layout_width="150dip" android:text="線上點餐" android:id="@+id/button6" android:layout_height="45dip" android:layout_x="0dip" android:layout_y="357dip"></Button>
-    <Button android:layout_width="150dip" android:text="緊急聯絡" android:id="@+id/button7" android:layout_height="45dip" android:layout_y="357dip" android:layout_x="168dip"></Button>
-    <Button android:layout_width="150dip" android:id="@+id/button1" android:layout_height="45dip" android:text="今日消息" android:layout_x="0dip" android:layout_y="157dip"></Button>
-    
+    <TableRow android:layout_width="match_parent" android:id="@+id/tableRow1" android:layout_height="wrap_content">
 	<TextView
-    android:id="@+id/mytv"
-    android:layout_width="150px"
-    android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
-    android:text="@string/hello"
-    android:singleLine="true"
-    android:focusable="true" 
-    android:focusableInTouchMode="true"
-    android:ellipsize="marquee"
-    android:marqueeRepeatLimit="marquee_forever"/>
-</AbsoluteLayout>
+	android:textAppearance="@android:attr/textAppearanceLarge"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content"
+	android:id="@+id/txtMarquee"
+	android:text="最新消息："
+	android:textSize="30sp"
+	android:marqueeRepeatLimit="-1"
+	android:ellipsize="marquee"
+	android:singleLine="true"
+	android:padding="5sp"
+	android:focusableInTouchMode="true"
+	android:focusable="true" />
+    </TableRow>
+
+    <TableRow android:layout_width="match_parent" android:id="@+id/tableRow2" android:layout_height="wrap_content">
+ 	<ListView android:id="@android:id/list" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:cacheColorHint="#ffffffff"
+		android:clickable="false"
+	/>
+    </TableRow>
+</LinearLayout>

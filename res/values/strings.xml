@@ -82,7 +82,7 @@
     <string name="sixfu_79">fi_3</string>
     <string name="sixfu_80">fi_4</string>
     
-    <string name="url">http://192.168.20.102:44444/sixfu/</string>
+    <string name="url">http://192.168.0.50:44444/sixfu/</string>
     
     
 </resources>
