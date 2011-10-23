@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:id="@+id/AbsoluteLayout01" 
-	android:layout_width="wrap_content" 
-	android:layout_height="wrap_content"
-	android:background="@drawable/firstlogo"
-	xmlns:android="http://schemas.android.com/apk/res/android">
-    <TableRow android:layout_width="match_parent" android:id="@+id/tableRow1" android:layout_height="wrap_content">
-	<TextView
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="vertical" 
+  android:background="@drawable/firstlogo">
+
+    <TextView
 	android:textAppearance="@android:attr/textAppearanceLarge"
 	android:layout_height="wrap_content"
-	android:layout_width="wrap_content"
+	android:layout_width="fill_parent"
 	android:id="@+id/txtMarquee"
 	android:text="最新消息："
-	android:textSize="30sp"
-	android:marqueeRepeatLimit="-1"
+	android:textSize="14sp"
+	android:focusable="true"
+	android:marqueeRepeatLimit="marquee_forever"
 	android:ellipsize="marquee"
-	android:singleLine="true"
-	android:padding="5sp"
+		android:padding="5sp"
 	android:focusableInTouchMode="true"
-	android:focusable="true" />
-    </TableRow>
-
-    <TableRow android:layout_width="match_parent" android:id="@+id/tableRow2" android:layout_height="wrap_content">
- 	<ListView android:id="@android:id/list" android:layout_width="fill_parent"
-		android:layout_height="wrap_content" android:cacheColorHint="#ffffffff"
-		android:clickable="false"
-	/>
-    </TableRow>
-</LinearLayout>
+	 />
+ 	<ListView android:id="@android:id/list" 
+ 		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:cacheColorHint="#ffffffff"
+		android:clickable="true"
+		android:focusable="false"
+		/>
+</LinearLayout>     

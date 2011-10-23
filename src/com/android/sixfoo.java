@@ -18,6 +18,7 @@ import android.app.ListActivity;
 import android.content.Intent;
 
 import android.os.Bundle;
+import android.text.TextUtils.TruncateAt;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -30,10 +31,10 @@ public class sixfoo extends ListActivity
     /** Called when the activity is first created. */
 	//private static final int SHOW_EDITOR = 0;
 	private TextView txtMarquee;
+	private ListView lv;
 	ArrayList<String> light_news;
 	
 	private static final int MENU_EXIT = Menu.FIRST;
-	
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) 
@@ -42,7 +43,7 @@ public class sixfoo extends ListActivity
 		setContentView(R.layout.main);
 		
 		txtMarquee = (TextView)findViewById(R.id.txtMarquee);
-
+		
     	String loginurl  = (String) this.getResources().getText(R.string.url);
 
     	//get current data
@@ -112,11 +113,16 @@ public class sixfoo extends ListActivity
 		element = new ContentListElement();
 		element.setTitle("園區導覽");
 		elements.add(element);
+
+		element = new ContentListElement();
+		element.setTitle("結束程式");
+		elements.add(element);
 		
 		adapter.addList(elements);
 
 		this.setListAdapter(adapter);
-
+		
+		//lv.setFocusable(false);
 	}
 	
 	  public boolean onCreateOptionsMenu(Menu menu)
