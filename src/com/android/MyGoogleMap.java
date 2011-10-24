@@ -178,8 +178,6 @@ public class MyGoogleMap extends MapActivity
     }); 
 
 
-    Log.v("speed", speed);
-    
   }
   
   private GeoPoint getGeoByLocation(Location location) 
@@ -240,7 +238,6 @@ public class MyGoogleMap extends MapActivity
   protected void onDestroy(){
       super.onDestroy();
       //Kill myself
-      android.os.Process.killProcess(android.os.Process.myPid());
   }
   
   //更新現在位置

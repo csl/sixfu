@@ -34,7 +34,7 @@
      android:id="@+id/cstaus"
      android:layout_width="wrap_content"
 	 android:layout_height="wrap_content" 
-     android:text="SAFE" 
+     android:text="現在位置" 
 	/>
   </LinearLayout>
 

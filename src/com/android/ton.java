@@ -23,7 +23,7 @@ import android.widget.EditText;
 public class ton extends Activity {
     /** Called when the activity is first created. */
 	//private static final int SHOW_EDITOR = 0;
-	private String tel;
+	static public String tel;
 	private String loginurl;
 	static public String TAG = "SIXFU";
 	
@@ -40,7 +40,7 @@ public class ton extends Activity {
         
         if (tel == null)
          {
-        	tel = "";
+        	tel = "0987665431";
         	//simcard not offer
             //顯示輸入IP的windows
             final EditText input = new EditText(this);
@@ -61,6 +61,10 @@ public class ton extends Activity {
               try
               {
                 tel = input.getText().toString();  
+                if (tel.equals(""))
+                {
+                	tel = "0987665431";                	
+                }
               }
               catch (Exception e)
               {

@@ -50,6 +50,7 @@ public class advise extends Activity {
 				intent.putExtras(bundle); 
 				
 				startActivity(intent);
+				finish();
 			}		
 		});	
 	}

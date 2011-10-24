@@ -91,7 +91,7 @@
         <activity android:label="@string/sixfu_80" android:name="MyGoogleMap"></activity>
         <activity android:label="@string/sixfu_80" android:name="viewc"></activity>
         <activity android:label="@string/sixfu_80" android:name="rfviewc"></activity>
-        
+        <uses-library android:name="com.google.android.maps"/> 
     </application>
 
     <uses-sdk android:minSdkVersion="8" />

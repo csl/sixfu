@@ -38,6 +38,7 @@ public class todaynews extends Activity {
 				intent.putExtras(bundle); 
 				
 				startActivity(intent);
+				finish();
 			}
 		});
         button03.setOnClickListener(new Button.OnClickListener(){
@@ -50,6 +51,7 @@ public class todaynews extends Activity {
 				intent.putExtras(bundle); 
 				
 				startActivity(intent);
+				finish();
 			}
 		});
         button04.setOnClickListener(new Button.OnClickListener(){
@@ -62,6 +64,7 @@ public class todaynews extends Activity {
 				intent.putExtras(bundle); 
 				
 				startActivity(intent);
+				finish();
 			}
 		});
     }
