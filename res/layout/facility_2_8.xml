@@ -4,6 +4,7 @@
 	android:layout_height="wrap_content" 
 	xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:layout_gravity="center">
+    <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/facility_2_8"></ImageView>
     <TextView android:text="別的地方有錢還騎不到駱駝呢!現在只要付費一點點,您就可以讓小朋友試試騎駱駝的感覺,保證小朋友所有同學聽了之後肯定都會投以羨慕的眼光!" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
    
 </TableLayout>

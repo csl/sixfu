@@ -4,6 +4,7 @@
 	android:layout_height="wrap_content" 
 	xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:layout_gravity="center">
+    <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/facility_4_8"></ImageView>
     <TextView android:text="刺激度百分百的大海嘯,強調三度空間旋轉及強大離心力,宛如驚濤駭浪的猛烈翻滾與旋轉,身不由己的被抓起又放下,刺激感挑戰您的極限,沒有乘坐過的人絕對無法想像那種感覺,歡迎您前來體驗前所未有大海嘯席捲的恐懼與快感" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
    
 </TableLayout>

@@ -4,6 +4,7 @@
 	android:layout_height="wrap_content" 
 	xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:layout_gravity="center">
+    <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/facility_4_4"></ImageView>
     <TextView android:text="可愛的巨嘴鳥是南太平洋特有的鳥類,看似過大的嘴型搭配彩色的身軀,讓人看了就喜歡,坐上巨嘴鳥,您還可以自行操控,悠游的上下旋轉飛翔,是項是和全家人一起搭乘的遊樂設施" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
    
 </TableLayout>

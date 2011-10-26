@@ -108,9 +108,13 @@ public class sixfoo extends ListActivity
 		elements.add(element);
 		
 		element = new ContentListElement();
-		element.setTitle("飲食資訊");
+		element.setTitle("餐飲資訊");
 		elements.add(element);
 
+		element = new ContentListElement();
+		element.setTitle("設施資訊");
+		elements.add(element);		
+		
 		element = new ContentListElement();
 		element.setTitle("遊園建議");
 		elements.add(element);
@@ -175,7 +179,6 @@ public class sixfoo extends ListActivity
 				intent.setClass(sixfoo.this, todaynews.class);
 		
 				startActivity(intent);
-				finish();
 			}
 			else if (position==2)
 			{
@@ -183,7 +186,6 @@ public class sixfoo extends ListActivity
 				intent.setClass(sixfoo.this,global.class);
 		
 				startActivity(intent);
-				finish();
 			}
 			else if (position == 3)
 			{
@@ -191,47 +193,46 @@ public class sixfoo extends ListActivity
 				intent.setClass(sixfoo.this,order.class);
 		
 				startActivity(intent);
-				finish();
 			}
 			else if (position == 4)
+			{
+				Intent intent = new Intent();
+				intent.setClass(sixfoo.this,facility.class);
+		
+				startActivity(intent);
+			}		
+			else if (position == 5)
 			{
 				Intent intent = new Intent();
 				intent.setClass(sixfoo.this,advise.class);
 		
 				startActivity(intent);
-				finish();
 			}
-			else if (position == 5)
+			else if (position == 6)
 			{
 				Intent intent = new Intent();
 				intent.setClass(sixfoo.this,emergency.class);
 		
 				startActivity(intent);
-				finish();
 			}
-			else if (position == 6)
+			else if (position == 7)
 			{
 				Intent intent = new Intent();
 				intent.setClass(sixfoo.this,MyGoogleMap.class);
 		
 				startActivity(intent);
-				finish();
 			}
-			else if (position == 7)
+			else if (position == 8)
 			{
 				loginurl  = (String) this.getResources().getText(R.string.url);
 				tel = ton.tel;
 
 				int rep = logintoweb(loginurl + "login.php?phone=" + tel + "&loginout=1"); 
-				if (rep == 0)
-				{
-		            android.os.Process.killProcess(android.os.Process.myPid());
-					this.finish();
-				}
-				
+	            android.os.Process.killProcess(android.os.Process.myPid());
+				this.finish();
 			}
 		}
-	  
+		
 		public int logintoweb(String uriAPI)
 		{
 			int error = 0;

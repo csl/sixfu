@@ -4,6 +4,7 @@
 	android:layout_height="wrap_content" 
 	xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:layout_gravity="center">
+    <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@layout/facility_5_8" android:src="@drawable/facility_5_8"></ImageView>
     <TextView android:text="電玩間裡有各種最新最炫的電動玩具,快來試試吧!" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
    
 </TableLayout>

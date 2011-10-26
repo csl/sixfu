@@ -81,6 +81,8 @@
     <string name="sixfu_78">fi_2</string>
     <string name="sixfu_79">fi_3</string>
     <string name="sixfu_80">fi_4</string>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
     
     <string name="url">http://192.168.0.50:44444/sixfu/</string>
     

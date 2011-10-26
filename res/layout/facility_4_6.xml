@@ -4,6 +4,7 @@
 	android:layout_height="wrap_content" 
 	xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:layout_gravity="center">
+    <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/facility_4_6"></ImageView>
     <TextView android:text="此為專為小朋友們設計的兒童獨木舟,幼童可在大人陪同下搭乘小船,在水深及膝的池中遨遊,池中設有84公尺長的軌道,以牽曳系統控制,隨著森林鼓聲的節奏,可以享受風平浪靜的親子時光" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
    
 </TableLayout>

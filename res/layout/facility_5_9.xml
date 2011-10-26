@@ -4,6 +4,7 @@
 	android:layout_height="wrap_content" 
 	xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:layout_gravity="center">
+    <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/facility_5_9"></ImageView>
     <TextView android:text="在美國大西部也沒有忘了小朋友的福利喔!大馬靴是專為幼齡兒童設計的遊樂設施,個個造型可愛,色彩鮮明,極具俏皮的模樣,是小小朋友們的最愛" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
    
 </TableLayout>

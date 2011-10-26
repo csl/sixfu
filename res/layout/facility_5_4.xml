@@ -4,6 +4,7 @@
 	android:layout_height="wrap_content" 
 	xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:layout_gravity="center">
+    <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/facility_5_4"></ImageView>
     <TextView android:text="這是仿美國西部掏金時期的採礦列車,經由機械工程師的巧妙設計,在六福村內卻變成一列雲霄飛車,帶您在鐵道上不斷的上下旋轉翻滾,軌道全長335公尺,最大落差可達13公尺,以時速46公里的速度向下衝,讓你感受離心力,重力加速度所帶來的刺激和快感,全程雖僅需30秒,但卻已足以讓您回味無窮
 醉酒桶
 " android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>

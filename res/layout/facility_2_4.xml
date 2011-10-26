@@ -4,6 +4,7 @@
 	android:layout_height="wrap_content" 
 	xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:layout_gravity="center">
+    <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/facility_2_4"></ImageView>
     <TextView android:text="猴子行大運是圍繞在猴園四周的空中腳踏車,您可和親友一起搭乘,居高臨下,眺望欣賞100多隻珍貴猿猴的日常生活,讓您輕鬆暢遊猴園" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
    
 </TableLayout>

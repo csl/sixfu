@@ -4,6 +4,7 @@
 	android:layout_height="wrap_content" 
 	xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:layout_gravity="center">
+    <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/facility_4_1"></ImageView>
     <TextView android:text="坡里尼西亞人傳說中的大海怪在南太平洋現身了!他怒目長鬚,張牙舞爪的模樣,常常讓許多的討海人下破了膽,其實大海怪在驚駭的外表下卻有顆溫馴的心,他許願在六福村在著人們不停的旋轉,要讓人們忘記俗世的煩憂,盡情的享受南太平洋風情" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
    
 </TableLayout>

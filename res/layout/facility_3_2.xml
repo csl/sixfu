@@ -4,6 +4,7 @@
 	android:layout_height="wrap_content" 
 	xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:layout_gravity="center">
+    <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/facility_3_2"></ImageView>
     <TextView android:text="以360度轉動,倒轉世界狂飆,瞬間帶領您進入超高速的神祕世界中,有膽量的朋友千萬別放棄這個挑戰自己的機會" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
    
 </TableLayout>

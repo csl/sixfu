@@ -52,6 +52,7 @@ public class MyOverLay  extends Overlay {
 
     private int mRadius=6;
     
+    private MapLocation mSelectedMapLocation;  
 	/**
 	 * It is used to track the visibility of information window and clicked location is known location or not 
 	 * of the currently selected Map Location
@@ -65,11 +66,9 @@ public class MyOverLay  extends Overlay {
 		mBubbleIcon = BitmapFactory.decodeResource(mLocationViewers.getResources(),R.drawable.bubble);
 		mShadowIcon = BitmapFactory.decodeResource(mLocationViewers.getResources(),R.drawable.shadow);
 		mNowIcon = BitmapFactory.decodeResource(mLocationViewers.getResources(),R.drawable.mappin_blue);
-		showWinInfo = false;
 		
 		gp = new ArrayList<GeoPoint>();
 		tracker = new ArrayList<GeoPoint>();
-		ReadyShowRange = false;
 		ShowTracker = false;
 	}
 	
@@ -94,40 +93,46 @@ public class MyOverLay  extends Overlay {
       return tracker.get(index);
   }
 
+  private MapLocation getHitMapLocation(MapView	mapView, GeoPoint	tapPoint) 
+  {
+  	MapLocation hitMapLocation = null;
+		
+  	RectF hitTestRecr = new RectF();
+	Point screenCoords = new Point();
+  	Iterator<MapLocation> iterator = mLocationViewers.getMapLocations().iterator();
+  	while(iterator.hasNext()) {
+  		MapLocation testLocation = iterator.next();
+  		
+  		/**
+  		 * This is used to translate the map's lat/long coordinates to screen's coordinates
+  		 */
+  		mapView.getProjection().toPixels(testLocation.getPoint(), screenCoords);
+
+	    	// Create a testing Rectangle with the size and coordinates of our icon
+	    	// Set the testing Rectangle with the size and coordinates of our on screen icon
+  		hitTestRecr.set(-mBubbleIcon.getWidth()/2,-mBubbleIcon.getHeight(),mBubbleIcon.getWidth()/2,0);
+  		hitTestRecr.offset(screenCoords.x,screenCoords.y);
+
+	    	//  At last test for a match between our Rectangle and the location clicked by the user
+  		mapView.getProjection().toPixels(tapPoint, screenCoords);
+  		
+  		if (hitTestRecr.contains(screenCoords.x,screenCoords.y)) {
+  			hitMapLocation = testLocation;
+  			break;
+  		}
+  	}
+  	
+  	//  Finally clear the new MouseSelection as its process finished
+  	tapPoint = null;
+  	
+  	return hitMapLocation; 
+  }
+  
+
 	@Override
   //處理draw map上的圖案
-	public boolean onTap(GeoPoint p, MapView mapView)  {
-		
-		/**
-		 * Track the popup display
-		 */
-		//boolean isRemovePriorPopup = mSelectedMapLocation != null;  
-
-		/**
-		 * Test whether a new popup should display
-		 */
-		/*
-		mSelectedMapLocation = getHitMapLocation(mapView, p);
-		if ( isRemovePriorPopup || mSelectedMapLocation != null) 
-		{
-	    mapView.invalidate();
-	    if (showWinInfo == true && mSelectedMapLocation != null)
-	    {
-	      mSelectedMapLocation = null;
-	      showWinInfo = false;
-	    }
-		}		
-		else
-		{
-		  showWinInfo = false;
-		}
-		*/
-		Log.i("TAG", "onTap");
-		
-
-		/**
-		 *   Return true if we handled this onTap()
-		 */
+	public boolean onTap(GeoPoint p, MapView mapView)  
+	{
 		return true;
 	}
 	
@@ -138,7 +143,10 @@ public class MyOverLay  extends Overlay {
       //畫現在位置
       drawNowGeoMap(canvas, mapView, shadow);
       //畫地圖座標
-   		drawMapLocations(canvas, mapView, shadow);
+  	  drawMapLocations(canvas, mapView, shadow);
+      //畫資訊  	  
+	  drawInfoWindow(canvas, mapView, shadow);
+
   }
     
   //清除GPS Range座標
@@ -148,45 +156,6 @@ public class MyOverLay  extends Overlay {
     gp.clear();
   }
 
-    //draw range
-    private void drawPointRange(Canvas canvas, MapView mapView, boolean shadow) 
-    {
-      //若要求顯示才顯示
-      if (ReadyShowRange == true)
-      {
-        Paint paint = new Paint();
-        Point myScreenCoords1 = new Point();
-        Point myScreenCoords2 = new Point();
-        Point myScreenCoords3 = new Point();
-        Point myScreenCoords4 = new Point();
-        
-        //calculate
-        GeoPoint top_left = gp.get(0);        
-        GeoPoint top_right =  gp.get(2);
-        GeoPoint bottom_left =  gp.get(3);
-        GeoPoint buttom_right = gp.get(1);        
-        
-        //將座標顯示上去
-        mapView.getProjection().toPixels(top_left, myScreenCoords1);
-        mapView.getProjection().toPixels(top_right, myScreenCoords2);
-        mapView.getProjection().toPixels(bottom_left, myScreenCoords3);
-        mapView.getProjection().toPixels(buttom_right, myScreenCoords4);
-        paint.setStrokeWidth(2);
-        paint.setARGB(255, 255, 0, 0);
-
-        canvas.drawLine((float) myScreenCoords1.x, (float) myScreenCoords1.y, (float) myScreenCoords2.x,
-            (float) myScreenCoords2.y, paint);
-        canvas.drawLine((float) myScreenCoords1.x, (float) myScreenCoords1.y, (float) myScreenCoords3.x,
-            (float) myScreenCoords3.y, paint);
-        canvas.drawLine((float) myScreenCoords2.x, (float) myScreenCoords2.y, (float) myScreenCoords4.x,
-            (float) myScreenCoords4.y, paint);
-        canvas.drawLine((float) myScreenCoords3.x, (float) myScreenCoords3.y, (float) myScreenCoords4.x,
-            (float) myScreenCoords4.y, paint);
-  
-      }
-    }
-    
-    
     private void drawNowGeoMap(Canvas canvas, MapView mapView, boolean shadow) 
     {
       //顯示現在位置
@@ -206,13 +175,15 @@ public class MyOverLay  extends Overlay {
       }
     }
     
-    private void drawMapLocations(Canvas canvas, MapView	mapView, boolean shadow) {
-    	
-		Iterator<GeoPoint> iterator = gp.iterator();
+    private void drawMapLocations(Canvas canvas, MapView	mapView, boolean shadow) 
+    {
+		Iterator<MapLocation> iterator = mLocationViewers.getMapLocations().iterator();
 		Point screenCoords = new Point();
+		
+		
     	while(iterator.hasNext()) {	   
-    	  GeoPoint location = iterator.next();
-    		mapView.getProjection().toPixels(location, screenCoords);
+    		MapLocation location = iterator.next();
+    		mapView.getProjection().toPixels(location.getPoint(), screenCoords);
 			
 	    	if (shadow) {
 	    		// Offset the shadow in the y axis as it is angled, so the base is at x=0
@@ -220,6 +191,50 @@ public class MyOverLay  extends Overlay {
 	    	} else {
     			canvas.drawBitmap(mBubbleIcon, screenCoords.x - mBubbleIcon.getWidth()/2, screenCoords.y - mBubbleIcon.getHeight(),null);
 	    	}
+    	}
+    	
+    }
+    
+    private void drawInfoWindow(Canvas canvas, MapView	mapView, boolean shadow) {
+    	
+    		if ( shadow) {
+    			//  Skip painting a shadow
+    		} else {
+    		  	Iterator<MapLocation> iterator = mLocationViewers.getMapLocations().iterator();
+    		  	while(iterator.hasNext()) {
+    		  		MapLocation testLocation = iterator.next();
+    			
+					//  First we need to determine the screen coordinates of the selected MapLocation
+					Point selDestinationOffset = new Point();
+					mapView.getProjection().toPixels(testLocation.getPoint(), selDestinationOffset);
+			    	
+			    	//  Setup the info window
+					int INFO_WINDOW_WIDTH = 175;
+					int INFO_WINDOW_HEIGHT = 40;
+					
+					RectF infoWindowRect = new RectF(0,0,INFO_WINDOW_WIDTH,INFO_WINDOW_HEIGHT);
+					
+					infoWindowOffsetX = selDestinationOffset.x-INFO_WINDOW_WIDTH/2;
+					infoWindowOffsetY = selDestinationOffset.y-INFO_WINDOW_HEIGHT-mBubbleIcon.getHeight();
+					infoWindowRect.offset(infoWindowOffsetX, infoWindowOffsetY);
+	
+					//  Drawing the inner info window
+					canvas.drawRoundRect(infoWindowRect, 10, 10, getmInnerPaint());
+					
+					//  Drawing the border for info window
+					canvas.drawRoundRect(infoWindowRect, 10, 10, getmBorderPaint());
+						
+					//  Draw the MapLocation's name
+					int TEXT_OFFSET_X = 10;
+					int TEXT_OFFSET_Y = 15;
+	
+					int TEXT1_OFFSET_X = 20;
+					int TEXT1_OFFSET_Y = 25;
+	
+					canvas.drawText(testLocation.getName(), infoWindowOffsetX+TEXT_OFFSET_X,infoWindowOffsetY+TEXT_OFFSET_Y, getmTextPaint());
+					canvas.drawText("此為設施", infoWindowOffsetX+TEXT1_OFFSET_X,infoWindowOffsetY+TEXT1_OFFSET_Y, getmTextPaint());
+					showWinInfo = true;
+    		  	}
     	}
     }
     

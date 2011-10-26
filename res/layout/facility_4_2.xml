@@ -4,6 +4,7 @@
 	android:layout_height="wrap_content" 
 	xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:layout_gravity="center">
+    <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/facility_4_2"></ImageView>
     <TextView android:text="大怒神超速自由落體每次可乘坐二十人,搭乘座椅緩緩上升時,您在忐忑不安的心情中可以欣賞六福村全貌並鳥瞰關西地區優美的風景,上升至最高點時,您將隱身大怒神憤怒的面容中,就在此時,座椅以自由落體的G速度向下墜落,就在您尖叫啊!的一聲尚未結束的幾秒中,霎那間已從53公尺(17層樓高)降至地面,在頭皮發麻下體驗地心引力的威力" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
    
 </TableLayout>

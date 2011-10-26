@@ -4,6 +4,7 @@
 	android:layout_height="wrap_content" 
 	xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:layout_gravity="center">
+    <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/facility_5_5"></ImageView>
     <TextView android:text="是仿Scotch Whisky酒桶造型的醉酒桶,一個個小酒桶不僅圍繞著一個中心大酒桶公轉,也會彼此自轉,比起早期其他遊樂園的咖啡杯設施更加好玩,坐在小酒桶內與同伴合力旋轉黑色圓盤,小酒桶會有意想不到的自轉速度,當你走出小酒桶踏上地面時,頓時會感到如喝醉般的天旋地轉" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
    
 </TableLayout>

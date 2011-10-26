@@ -33,12 +33,13 @@ public class rfviewc extends Activity
         menu = (TextView)findViewById(R.id.menu);
 
         //Set data to TextView
+        /*
        	name.setText(order.now_rfstatus.h_name);
        	time.setText(order.now_rfstatus.h_time);
        	addr.setText(order.now_rfstatus.h_addr);
        	phone.setText(order.now_rfstatus.h_phone);
        	menu.setText(order.now_rfstatus.h_menu);
-        
+        */
         Button button01 = (Button)rfviewc.this.findViewById(R.id.b_button);
         button01.setOnClickListener(new Button.OnClickListener(){
 			@Override
@@ -54,7 +55,7 @@ public class rfviewc extends Activity
 			public void onClick(View v)
 			{
 				Intent i = new Intent( Intent.ACTION_CALL );
-				i.setData(Uri.parse("tel:" + order.now_rfstatus.h_phone));
+				//i.setData(Uri.parse("tel:" + order.now_rfstatus.h_phone));
 				startActivity(i);				
 		    }
 		});

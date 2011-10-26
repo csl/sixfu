@@ -4,6 +4,7 @@
 	android:layout_height="wrap_content" 
 	xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:layout_gravity="center">
+    <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/facility_5_7"></ImageView>
     <TextView android:text="OK牧場是當年墓碑鎮著名的Earp和Clantons槍戰決鬥場所,以墓碑鎮為景觀背景的美國大西部因而將射擊館命名為OK牧場,遊客可在槍聲隆隆的射擊館中,扮演西部神射手的角色,試試您的槍法可打中幾隻美國火雞 (投幣設施)" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
    
 </TableLayout>

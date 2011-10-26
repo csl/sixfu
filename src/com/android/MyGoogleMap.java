@@ -60,14 +60,13 @@ public class MyGoogleMap extends MapActivity
   private MyOverLay overlay;
   private String strLocationProvider = ""; 
 
-  private Button mButton02,mButton03,mButton04,mButton05;
+  private Button mButton02,mButton03,mButton04;
   private int intZoomLevel=0;//geoLatitude,geoLongitude; 
-  public GeoPoint nowGeoPoint;
+  static public GeoPoint nowGeoPoint;
   
-  private String speed;
+  private List<MapLocation> mapLocations;
   
   public boolean mshow;
-   
   public TextView label;
   
   @Override 
@@ -82,6 +81,7 @@ public class MyGoogleMap extends MapActivity
     //googleMAP
     mMapView = (MapView)findViewById(R.id.myMapView1); 
     mMapController01 = mMapView.getController(); 
+    getMapLocations();
 
     //訊息顯示
     label = (TextView) findViewById(R.id.cstaus);
@@ -92,7 +92,7 @@ public class MyGoogleMap extends MapActivity
     mMapView.setEnabled(true);
     mMapView.setClickable(true);
      
-    intZoomLevel = 15; 
+    intZoomLevel = 18; 
     mMapController01.setZoom(intZoomLevel); 
 
     mshow = false;
@@ -103,15 +103,17 @@ public class MyGoogleMap extends MapActivity
     locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE); 
     
     getLocationProvider();     
-    nowGeoPoint = getGeoByLocation(mLocation01); 
+    nowGeoPoint = getGeoByLocation(mLocation01);
     
-    if (nowGeoPoint != null)
+    if (nowGeoPoint == null)
     {
-      refreshMapViewByGeoPoint(nowGeoPoint, 
-          mMapView, intZoomLevel); 
+        nowGeoPoint = new GeoPoint((int) (24.992476 * 1000000),(int) (121.542821 * 1000000));
     }
+    
+    refreshMapViewByGeoPoint(nowGeoPoint, 
+            mMapView, intZoomLevel); 
 
-    locationManager.requestLocationUpdates(strLocationProvider, 0, 0, locationListener); 
+    locationManager.requestLocationUpdates(strLocationProvider, 2000, 10, locationListener); 
     
     //建構畫在GoogleMap的overlay
     overlay = new MyOverLay(this);
@@ -179,6 +181,21 @@ public class MyGoogleMap extends MapActivity
 
 
   }
+  
+  public List<MapLocation> getMapLocations() 
+  {
+    if (mapLocations == null) 
+    {
+      mapLocations = new ArrayList<MapLocation>();
+      
+      MapLocation place = new MapLocation("景行公園", 24.992476, 121.542821, 0);
+      mapLocations.add(place);
+      place = new MapLocation("萬有公園", 25.0007561, 121.5419251, 0);
+      mapLocations.add(place);
+      
+    }
+    return mapLocations;
+  }  
   
   private GeoPoint getGeoByLocation(Location location) 
   { 

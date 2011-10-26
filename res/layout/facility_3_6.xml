@@ -4,6 +4,7 @@
 	android:layout_height="wrap_content" 
 	xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:layout_gravity="center">
+    <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/facility_3_6"></ImageView>
     <TextView android:text="這是特別為小朋友及全家人共享歡樂時光所精心打造的遊樂設施,您可以化身為小王子或是小公主,乘著阿拉伯皇家的駿馬遨遊在雕飾精細,富麗堂皇的皇宮中,在旋轉木馬的音樂及小朋友的歡笑聲之中,阿拉伯皇宮也增添了許多夢幻的氣氛,是非常適合親子同樂的設施" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
    
 </TableLayout>
