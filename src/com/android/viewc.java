@@ -54,12 +54,10 @@ public class viewc extends Activity
 			public void onClick(View v){
 		        if (id == 1)
 		        {
-		        	startActivity(new Intent(viewc.this, todaynews.class));
 		        	finish();
 		        }
 		        else
 		        {
-		        	startActivity(new Intent(viewc.this, advise.class));
 		        	finish();
 		        }
 		    }

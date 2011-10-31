@@ -9,10 +9,12 @@ xmlns:android="http://schemas.android.com/apk/res/android">
  android:id="@+id/topTextView"  
  android:layout_width="fill_parent"  
  android:textSize="14dip"  
+ android:textColor="@color/black"   
  android:layout_height="wrap_content"></TextView>  
 
 <TextView android:text="TextView2" 
   android:id="@+id/bottomTextView"  
+  android:textColor="@color/black"   
   android:layout_below="@+id/topTextView" 
   android:layout_width="fill_parent"   
   android:layout_height="wrap_content"></TextView>  

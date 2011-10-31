@@ -84,7 +84,7 @@
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     
-    <string name="url">http://192.168.0.50:44444/sixfu/</string>
+    <string name="url">http://192.168.0.51:44444/sixfu/</string>
     
     
 </resources>

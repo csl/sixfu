@@ -26,7 +26,9 @@ public class emergency extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.emergency);
-        
+
+    	loginurl  = (String) this.getResources().getText(R.string.url);
+
         if (MyGoogleMap.nowGeoPoint == null)
         {
         	openGPSDialog();
@@ -117,7 +119,7 @@ public class emergency extends Activity {
 					        geoLatitude = MyGoogleMap.nowGeoPoint.getLatitudeE6()/1E6; 
 					        geoLongitude = MyGoogleMap.nowGeoPoint.getLongitudeE6()/1E6;
 						}
-						
+
 						Log.i(TAG, loginurl + "setemergecy.php?");
 						int rep = toweb(loginurl + "setEmeremcy.php?phone=" + ton.tel + "&gps=" + geoLatitude + "," + geoLongitude + "&status=1"); 
 						if (rep == 0)

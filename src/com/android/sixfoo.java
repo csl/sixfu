@@ -120,12 +120,13 @@ public class sixfoo extends ListActivity
 		elements.add(element);
 
 		element = new ContentListElement();
-		element.setTitle("緊急聯絡");
+		element.setTitle("園區導覽");
 		elements.add(element);
 
 		element = new ContentListElement();
-		element.setTitle("園區導覽");
+		element.setTitle("緊急聯絡");
 		elements.add(element);
+
 
 		element = new ContentListElement();
 		element.setTitle("結束程式");
@@ -208,14 +209,14 @@ public class sixfoo extends ListActivity
 		
 				startActivity(intent);
 			}
-			else if (position == 6)
+			else if (position == 7)
 			{
 				Intent intent = new Intent();
 				intent.setClass(sixfoo.this,emergency.class);
 		
 				startActivity(intent);
 			}
-			else if (position == 7)
+			else if (position == 6)
 			{
 				Intent intent = new Intent();
 				intent.setClass(sixfoo.this,MyGoogleMap.class);
@@ -227,7 +228,7 @@ public class sixfoo extends ListActivity
 				loginurl  = (String) this.getResources().getText(R.string.url);
 				tel = ton.tel;
 
-				int rep = logintoweb(loginurl + "login.php?phone=" + tel + "&loginout=1"); 
+				//int rep = logintoweb(loginurl + "login.php?phone=" + tel + "&loginout=1"); 
 	            android.os.Process.killProcess(android.os.Process.myPid());
 				this.finish();
 			}

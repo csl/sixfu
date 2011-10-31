@@ -1,0 +1,15 @@
+<RelativeLayout android:id="@+id/RelativeLayout01"   
+android:layout_width="fill_parent" android:layout_height="wrap_content"  
+android:paddingBottom="2dip"  
+android:paddingLeft="12dip"  
+android:paddingRight="12dip"  
+xmlns:android="http://schemas.android.com/apk/res/android">  
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/text1"
+    android:paddingTop="2dip"
+    android:paddingBottom="3dip"
+    android:textColor="@color/black" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"/> 
+</RelativeLayout>    

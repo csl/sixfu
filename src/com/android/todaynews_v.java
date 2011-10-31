@@ -122,14 +122,18 @@ public class todaynews_v extends Activity {
         //Display: create ListView class
         show_view = (ListView)findViewById(R.id.listview);
         
-        SimpleAdapter listitemAdapter=new SimpleAdapter(this,  
-        										w_list, 
-        										R.layout.no_listview_style,
-        										new String[]{"ItemTitle","ItemText"}, 
-        										new int[]{R.id.topTextView,R.id.bottomTextView}  
-        										);  
+        if (w_list != null)
+        {
+	        SimpleAdapter listitemAdapter=new SimpleAdapter(this,  
+	        										w_list, 
+	        										R.layout.no_listview_style,
+	        										new String[]{"ItemTitle","ItemText"}, 
+	        										new int[]{R.id.topTextView,R.id.bottomTextView}  
+	        										);  
+	        
+	        show_view.setAdapter(listitemAdapter);
+        }
         
-        show_view.setAdapter(listitemAdapter);              
         show_view.setOnItemClickListener(new OnItemClickListener() 
         {          
         	   @Override  

@@ -89,16 +89,16 @@ public class ton extends Activity {
 			@Override
 			public void onClick(View v){
 				
-				//login
-				startActivity(new Intent(ton.this, sixfoo.class));
-				ton.this.finish();
-				
 				Log.i(TAG,  loginurl + "login.php?phone=" + tel);
 				int rep = logintoweb(loginurl + "login.php?phone=" + tel); 
 				if (rep == 0)
 				{
 					startActivity(new Intent(ton.this, sixfoo.class));
 					ton.this.finish();
+				}
+				else
+				{
+					openOptionsDialog("connection timeout");
 				}
 			}
 			
@@ -145,4 +145,21 @@ public class ton extends Activity {
 		});
 			
 	}
+	
+	   private void openOptionsDialog(String info)
+		{
+		    new AlertDialog.Builder(this)
+		    .setTitle("message")
+		    .setMessage(info)
+		    .setPositiveButton("OK",
+		        new DialogInterface.OnClickListener()
+		        {
+		         public void onClick(DialogInterface dialoginterface, int i)
+		         {
+		        	 
+		         }
+		         }
+		        )
+		    .show();
+		  }
 }
